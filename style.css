@@ -10,8 +10,7 @@
 
 @font-face {
     font-family: 'The Seasons';
-    src: url('./assets/fonts/fontspring-theseasons-reg-webfont.woff2') format('woff2');
-    src: url('./assets/fonts/fontspring-theseasons-reg-webfont.woff') format('woff');
+    src: url('./assets/fonts/Fontspring-theseasons-reg.ttf') format('truetype');
     font-weight: 400;
 }
 
