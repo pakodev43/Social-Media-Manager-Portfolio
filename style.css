@@ -112,7 +112,6 @@ a:hover{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
-    letter-spacing: unset;
     
     @media ( min-width: 900px ) {
         margin: 7rem 0 5rem 0;
