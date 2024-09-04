@@ -1,0 +1,40 @@
+var data = {
+
+
+    "Title" : "Malik Saad",
+    "Site_description" : "I provide social media marketing services. Having 3 years of experience in marketing, I am the best choice of any individual or company having there bussines online.",
+    "Site_keywords" : "marketing, socialmediamarketing, bussinesgrowth, onwards...",
+
+
+    "Tagline" : "Social Media Marketing Manager.",
+    "Skills" : "Bussines Growth | Advertisements | Strategies",
+
+    "Phone_number" : "+123-456-7890",
+    "Email" : "example@mail.com",
+
+
+    "Service_1_title" : "Strategizing content and campaigns",
+    "Service_1_text" : "Ideating and executing social campaigns that align with company’s larger marketing strategies. Generating ideas for timely and evergreen content or repurpose user-generated content.",
+
+    "Service_2_title" : "Increasing followers and driving engagement",
+    "Service_2_text" : "Boost company’s profile on all active social platforms by increasing their followers and the amount of engagement (likes, comments, shares) they receive. Developing written or visual posts to achieve both.",
+
+    "Service_3_title" : "Research advertising trends",
+    "Service_3_text" : "Performing research on current benchmark trends and audience preferences· Design and implementing social media strategy to align with business goals.",
+
+    "Service_4_title" : "Monitor SEO and web traffic metrics",
+    "Service_4_text" : "Using keyword research, content creation, link building, technical audits, and more to improve organic search results.",
+
+    "Service_5_title" : "Creating content",
+    "Service_5_text" : "Creating visually appealing content, including text posts, video and images for use on social media.",
+
+    "Service_6_title" : "Creating social media advertisements",
+    "Service_6_text" : "Increase brand-awareness. Planing, implementation, and management of a comprehensive advertising and marketing program. Managing sales, ad design, and promotional operations.",
+
+
+    "Linkedin_profile_link" : "https://www.linkedin.com/",
+    "Instagram_profile_link" : "https://www.instagram.com/",
+    "Tiktok_profile_link" : "https://www.tiktok.com/",
+    "Facebook_profile_link" : "https://www.facebook.com/"
+    
+}

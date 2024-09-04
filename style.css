@@ -1,7 +1,14 @@
+/*
+    Author:      "Pakodev"
+    Email:        pakodev.info@gmail.com
+    X (twitter):  https://x.com/dev_pakodev
+*/
 
-/* Media Query for Desktop: @media ( min-width: 900px ) {} */
+/* Used mobile layout first approach */
+/* Break Point for Desktop view: (min-width: 900px) */
 
-/* Fonts */
+
+/*--- Fonts ---*/
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Regular.ttf') format('truetype');
@@ -14,7 +21,7 @@
     font-weight: 400;
 }
 
-/* Global Variables */
+/*--- Global Variables ---*/
 :root{
 
     /* Colors */
@@ -22,14 +29,6 @@
     --clr-text-primary-light: rgba(15, 15, 15, 0.7);
     --clr-bg: rgb(235, 235, 235);
     --clr-secondary: rgb(255 255 255 / 67%);
-    --clr-link-hover: rgba(112, 112, 112, 0.7);
-    
-    /* Dark Theme Colors */
-    /* --clr-text-primary: rgb(253, 253, 253);
-    --clr-text-primary-light: rgba(240, 240, 240, 0.7);
-    --clr-bg: rgb(26, 26, 26);
-    --clr-secondary: rgba(19, 19, 19, 0.67);
-    --clr-link-hover: rgba(161, 161, 161, 0.7); */
 
 
     /* Font Sizes */
@@ -45,18 +44,18 @@
 
 
     /* Fonts */
-    --font-primary: serif;
     --font-primary: 'Lato', serif;
     --font-secondary: 'The Seasons', serif;
 
 }
 
-/* Resets */
-*, *::before, *::after{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body{
     max-width: 1440px;
@@ -69,35 +68,45 @@ body{
     @media ( min-width: 900px ) {
         padding: 0 5rem;
     }
+}
 
-    h1, h2, h3{
-        font-family: var(--font-secondary);
+h1,
+h2,
+h3{
+    font-family: var(--font-secondary);
+}
+
+h2{
+    font-size: var(--fs-second-heading-mobile);
+
+    @media ( min-width: 900px ) {
+        font-size: var(--fs-second-heading-desktop);
     }
+}
 
-    h2{
-        font-size: var(--fs-second-heading-mobile);
+h3{
+    font-size: var(--fs-third-heading-mobile);
 
-        @media ( min-width: 900px ) {
-            font-size: var(--fs-second-heading-desktop);
-        }
+    @media ( min-width: 900px ) {
+        font-size: var(--fs-third-heading-desktop);
     }
+}
 
-    h3{
-        font-size: var(--fs-third-heading-mobile);
+p {
+    line-height: 1.24;
+    letter-spacing: 0.1px;
+}
 
-        @media ( min-width: 900px ) {
-            font-size: var(--fs-third-heading-desktop);
-        }
-    }
+path{
+    fill: var(--clr-text-primary);
+}
 
-    path{
-        fill: var(--clr-text-primary);
-    }
+a:hover{
+    transform: scale(1.05);
+}
 
-    a:hover, a:hover path {
-        color: var(--clr-link-hover);
-        fill: var(--clr-link-hover);
-    }
+.social_links a:hover svg {
+    transform: scale(1.2);
 }
 
 .name{
@@ -106,10 +115,12 @@ body{
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-
+    letter-spacing: 5px;
+    
     @media ( min-width: 900px ) {
         margin: 7rem 0 5rem 0;
         font-size: var(--fs-title-desktop);
+        letter-spacing: 30px;
     }
 }
 
@@ -170,16 +181,18 @@ body{
     align-items: center;
     gap: 1rem;
 
-    a{
-        font-size: var(--fs-small);
-        color: inherit;
-        text-decoration: none;
-    }
-
-    svg{
-        width: 1.5rem;
-    }
 }
+
+.social_links a{
+    font-size: var(--fs-small);
+    color: inherit;
+    text-decoration: none;
+}
+
+.social_links svg{
+    width: 1.5rem;
+}
+
 
 /* Sections combine styles */
 
@@ -199,31 +212,6 @@ body{
     }
 }
 
-
-
-/* Services Section */
-/* .service{
-    margin-block-end: 1.5rem;
-
-    @media ( min-width: 900px ) {
-        margin: 0 0 2rem 5rem;
-    }
-} */
-
-/* .service-name::before{
-    content: "";
-    aspect-ratio: 1 / 1;
-    width: 2rem;
-    background-color: silver;
-    border-radius: 50%;
-} */
-
-/* .service-name{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 400;
-} */
 
 .services{
     
@@ -253,8 +241,7 @@ body{
 }
 
 
-
-/* Portfolio Section */
+/*--- Portfolio Section ---*/
 .portfolio_items{
     
     @media ( min-width: 900px ) {
@@ -278,26 +265,28 @@ body{
 }
 
 
-
-/* Contact Section */
+/*--- Contact Section ---*/
 .contacts{
     margin-block-start: 3rem;
     width: fit-content;
     margin-inline: auto;
+    display: flex;
+    flex-direction: column;
     
     @media ( min-width: 900px ) {
         margin-block-start: 7rem;
+        width: 100%;
+        flex-direction: unset;
+        justify-content: space-between;
     }
+}
 
-    .social_links{
-        margin-block-start: 2rem;
-        gap: 1.2rem;
-        
-        @media ( min-width: 900px ) {
-            margin-block-start: 3rem;
-            width: fit-content;
-            margin-inline: auto;
-        }
+.contacts .social_links{
+    margin-block-start: .5rem;
+    gap: 1.2rem;
+    
+    @media ( min-width: 900px ) {
+        margin-block-start: 0;
     }
 }
 
@@ -319,8 +308,7 @@ body{
     color: var(--clr-text-primary);
     
     @media ( min-width: 900px ) {
-        margin-block-end: 1.5rem;
-        gap: 3rem;
+        gap: 1.5rem;
         font-size: var(--fs-500);
     }
 }
@@ -334,9 +322,14 @@ body{
     }
 }
 
+.contact:nth-child(2){
+    @media ( min-width: 900px ) {
+        order: 2;
+    }
+}
 
 
-/* FOOTER */
+/*--- FOOTER ---*/
 .footer{
     margin-block-start: 5rem;
     padding-block: 2rem;
@@ -346,6 +339,8 @@ body{
     color: var(--clr-text-primary-light);
 
     @media ( min-width: 900px ) {
-        margin-block-start: 15rem;
+        margin-block-start: 7rem;
     }
 }
+
+/*----- THE END -----*/
