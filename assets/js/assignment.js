@@ -43,10 +43,10 @@ document.querySelector('[ data-services-6-text ]').textContent = data.Service_6_
 
 document.querySelector('[ data-social-link-linkedin ]').href = data.Linkedin_profile_link
 document.querySelector('[ data-social-link-instagram ]').href = data.Instagram_profile_link
-document.querySelector('[ data-social-link-tiktok ]').href = data.Tiktok_profile_link
+document.querySelector('[ data-social-link-x ]').href = data.X_profile_link
 document.querySelector('[ data-social-link-facebook ]').href = data.Facebook_profile_link
 
 document.querySelector('[ data-footer-social-link-linkedin ]').href = data.Linkedin_profile_link
 document.querySelector('[ data-footer-social-link-instagram ]').href = data.Instagram_profile_link
-document.querySelector('[ data-footer-social-link-tiktok ]').href = data.Tiktok_profile_link
+document.querySelector('[ data-footer-social-link-x ]').href = data.X_profile_link
 document.querySelector('[ data-footer-social-link-facebook ]').href = data.Facebook_profile_link

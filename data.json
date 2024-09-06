@@ -34,7 +34,7 @@ var data = {
 
     "Linkedin_profile_link" : "https://www.linkedin.com/",
     "Instagram_profile_link" : "https://www.instagram.com/",
-    "Tiktok_profile_link" : "https://www.tiktok.com/",
+    "X_profile_link" : "https://www.x.com/",
     "Facebook_profile_link" : "https://www.facebook.com/"
     
 }
